@@ -3,12 +3,12 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyATXKywtpgCZHE9lq-OPJWjrdXVVdQLVSI",
-  authDomain: "balance-management-project.firebaseapp.com",
-  projectId: "balance-management-project",
-  storageBucket: "balance-management-project.firebasestorage.app",
-  messagingSenderId: "209184934170",
-  appId: "1:209184934170:web:fa74b7671e88404dcc84a3"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
